@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="C:\Users\pca104\Downloads\bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap.min.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+
+                if ($(window).scrollTop() > 0) {
+                    $(".navbar-ul li a").addClass('blue');
+                    $(".navbar-ul li a").removeClass('text-white');
+                    $('.banner-logo').attr('src', "../Images/logo.png");
+                    $('nav').addClass('nav-background');
+                    $(".header-link .login-form a").removeClass('text-white');
+                    $(".header-link .login-form a").addClass('blue');
+                    $(".header-link .login-form").removeClass('login-form');
+
+                    $(".header-link form").addClass('navscroll-login');
+
+                } else {
+                    $(".navbar-ul li a").addClass('text-white');
+                    $(".navbar-ul li a").removeClass('blue');
+                    $('nav').removeClass('nav-background')
+                    $('.banner-logo').attr('src', "../Images/logo_1.png");
+                    $(".header-link form").addClass('login-form');
+                    $(".header-link .login-form a").removeClass('blue');
+                    $(".header-link .login-form a").addClass('text-white');
+                    $(".header-link .login-form").removeClass('navscroll-login');
+
+                }
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container-fluid Banner">
+        <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top">
+            <img src="../Images/logo_1.png" class="banner-logo mr-4" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <img src="../Images/menu.svg" />
+
+            </button>
+
+            <div class="collapse navbar-collapse header-link" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto navbar-ul">
+                    <li class="nav-item pr-5">
+                        <a class="nav-link text-uppercase text-white" href="../Work/Work.html">how it works</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="nav-link text-uppercase text-white" href="../Contact/Contact.html">contact us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 login-form">
+                    <a href="../login.html" class="text-white nav-link"> Login</a>
+                </form>
+            </div>
+        </nav>
+        <!--<hr />-->
+        <div class="Banner-header">Contact us</div>
+    </div>
+
+
+    <!--</div>-->
+
+    <div class="container-fluid paragraph">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </div>
+
+    <!--Form-->
+
+    <form class="container">
+        <div class="form-row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                <input type="email" class="form-control" placeholder="Your@email.com">
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Message" rows="10"></textarea>
+
+        </div>
+        <div class="form-send">
+            <button type="submit" class="btn btn-danger btn-send">Send</button>
+        </div>
+    </form>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container-fluid page-footer">
+            <div class="footer-img"><img src="../Images/logo_1.png" /></div>
+            <div class="footer-content">
+                <div>
+                    <a href="../Contact/Contact.html">CONTACT US</a>
+                </div>
+                <div>
+                    
+                    <a href="../Faq/faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.Banner {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url("../Images/contact-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:300px;
+    position:relative;
+    max-width:100%;
+}
+.navbar-toggler-icon{
+  color:white;
+}
+.Banner-header {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+hr {
+    border-color: #ccc;
+}
+/*form*/
+
+.paragraph {
+    color: #8b9094;
+    font-size:19px;
+    padding:50px;
+}
+
+textarea::-webkit-input-placeholder {
+    line-height: 200px;
+    text-align: center;
+}
+.form-send{
+   text-align:center;
+   margin-bottom:5px;
+}
+/*footer*/
+
+.page-footer {
+    display: flex;
+    background-color: #3d3d3d;
+    /*height: 100px;*/
+    justify-content: space-between;
+}
+
+.main {
+    margin-bottom: 37px;
+}
+
+.footer-img img {
+    width: 70%;
+    padding: 6%;
+}
+
+.footer-content div a {
+    color: white;
+    margin-right: 15px;
+}
+
+.footer-content div {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.footer {
+    width: 100%;
+}
+/*form changing header*/
+.blue {
+    color: #00acc1 !important;
+}
+
+.nav-background {
+    background-color: white;
+}
+
+.navscroll-login {
+    color: #00acc1 !important;
+    border: 1px solid #00acc1 !important;
+}
+.login-form {
+    border: 1px solid white;
+    display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .banner-logo {
+        max-width: 145px;
+        max-height: 50px;
+    }
+
+    .Banner-header {
+        font-size: 33px;
+    }
+    .paragraph {
+        color: #8b9094;
+        font-size: 19px;
+        padding: 23px;
+    }
+    .form-send button {
+        width: 100%;
+    }
+    /*footer*/
+    .footer-img img {
+        width: 50%;
+        padding-top: 3% !important;
+        padding: 0;
+    }
+
+    .footer-img {
+        text-align: center;
+    }
+
+    .footer-content div a {
+        font-size: 13px;
+    }
+
+    .footer-content div {
+        padding-top: 15px;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .page-footer {
+        /*height: 80px;*/
+        flex-direction: column;
+    }
+
+    .footer {
+        position: unset;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
