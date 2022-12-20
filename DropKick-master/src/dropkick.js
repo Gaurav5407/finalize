@@ -52,7 +52,7 @@ class Dropkick {
         return dk;
       }
     }
-
+sdfsdfdsf
     if ( !this.sel ) {
       throw "You must pass a select to DropKick";
       return false;
