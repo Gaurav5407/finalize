@@ -5,7 +5,7 @@ import CustomEvent from 'custom-event';
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
 const isIframe = window.parent !== window.self;
 const noop = function() {};
-let _docListener;
+let _docListener;zxxzcxc
 
 /**
  * # Getting started
